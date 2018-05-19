@@ -1,0 +1,694 @@
+﻿@charset "UTF-8";
+
+/*DEFINIÇÃO DO ESTILO E CORES DO SITE*/
+/*Reginaldo Cardoso Domingos */
+/* https://www.w3.org/TR/css-fonts-3/ */
+
+
+/*==================CORES DO SITE=================*/
+/*
+html {background-color:#B22B12;}
+*/
+html {background-color:#ffffff;}
+
+body{
+    background-color: #ffffff;
+/*    box-shadow: 0em 0.3em 1em #000;*/
+}
+    
+p{
+    color: #000000;
+}
+
+.h1paginas {
+     color: #ff2800;
+}
+
+.header-2{background-color: #444444;
+    color: #ffffff;}
+
+/**************Cores do menu**************************/
+
+nav#menu {
+ background-color: #ff2800 ;
+ /*border-top: 5px solid #2A0770;
+ border-bottom: 5px solid #2A0770;*/
+}
+
+#menu ul li a {
+    color:#ffffff;}/* cor da fonte */
+#menu ul li a:hover, .padrao #menu .current a {
+    color:#444444 /* cor da fonte quando clica */
+/*   text-shadow: 2px 1px 1px #000000;*/
+}
+
+/**************Cores das bordas das imagens ************/
+
+.sectionhome img , .imgbox {
+	background: transparent;
+/*	border: 2px solid #000000;*/
+}
+
+
+/**************Cores rodape da pagina********************/ 
+.footerprincipal {
+    border-top: 10px solid #444444;}
+
+.footerprincipal,.footerprincipal p, .footerprincipal nav a{
+    background-color: #ff2800; 
+    color: #ffffff;}
+
+/*==========PADROES DO SITE========================*/
+
+/*img#logo {
+    width:1064px; 
+    height:200px;
+    margin: 0px -20px -1px -20px;
+    padding:  0px;
+}
+
+*/
+
+img#logo {
+    width:190px; 
+    height:90px;
+    /*width:418px; 
+    height:200px;*/
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    
+}
+
+img#logo-f1{ 
+    width:100px; 
+    height:20px;
+    position:absolute;
+    right: 10px;
+    padding: 10px;
+}
+
+img#logo-gts{
+    width:100px; 
+    height:20px;
+    position:absolute;
+    right: 120px;
+    padding: 10px;
+}
+
+body{
+/*    width: 1024px;*/
+    font-size: 16px;
+    margin:0 auto 0 auto;
+}
+
+
+/******************Fontes do site ****************/
+
+/*fonte principal dos textos */
+p, #articamp ul li, .sectionhome p, #regulamento ol li, 
+.sctquemsomos ul li {
+    font-family:'PT Serif Caption', serif;
+    font-size: 16px;
+    padding:0em 1em 0em 1em;
+}
+
+/* titulos e subtituros*/
+
+.header-2, .h1paginas, .footerprincipal,
+.Tit-home{
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+   
+#menu ul li a {
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.assinatura {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 35px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+    width: 400px;
+    float: left;
+    margin: inherit;
+}
+
+/*h1{
+    font-family:Andale Mono,monospace;
+    text-transform:capitalize;
+    color: #ffffff;
+    background-color: #2A0770;
+    position: fixed;
+    left: -75px;
+    top:400px;
+    transform: rotate(-90deg);
+    padding: 10px;
+}*/
+
+.header-2{
+    font-size: 14px; 
+    text-transform:capitalize;
+    padding-left: 1em;
+}
+
+.h1paginas{
+   text-transform:capitalize;
+    padding: inherit;
+    text-align: center;
+    font-style: normal;
+	font-weight: 700;
+	line-height:5px;
+}
+
+/*=======CONFIG DO MENU PRINCIPAL DA PAGINA============*/
+.padrao{
+    background-color: #ff2800;
+    width: 100%;
+    border: inherit;
+    background: url(../images/padrao/header.jpg);
+    background-repeat:no-repeat;
+}
+
+#menu ul li{display:inline;}
+
+#menu ul li a {
+     /* topo, direita, base, esquerda */
+    padding: 1em 1.5em 0em 1em; /*tamanho da borda do hoover*/
+    /* padding-left:25px; */
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px; 
+    font-weight: bold;
+    
+}
+/*box-shadow: inset -1px 0px 10px 0px rgba(0,0,0,0.75);
+testar como o menu princiapl*/
+
+nav#menu{
+    text-align: center;
+/*    margin: -1px -8px 0px -8px;*/
+}
+
+#headersociais ul li, #headersociais ul li a{
+    display:inline;
+    text-align: right;
+    padding-left: 0.2em;
+ }
+#headersociais{
+    text-align: right;
+    margin-right: 1em;
+    margin-top: -50px
+        
+    
+}
+
+/*====CONFIG DO FOOTER PRINCIPAL DA PAGINA =======*/
+
+.footerprincipal p {
+	font-size: 0.7em; 
+	text-align: center;
+    padding-bottom:20px;
+    margin-bottom: auto;
+}
+
+/*Menu sobre nos*/
+#footernos,#footernos a{
+	text-align: left;
+	display: block;
+    text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px; 
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+
+ }
+
+/*Menu Redes Sociais*/
+#footersociais{
+    margin-right: 20px;
+    text-align: right;
+}
+
+#footersociais ul li , #footersociais ul li a{
+	font-size: 1em; 
+	display:inline;
+}
+
+.logo-facebook,.logo-instagran, .logo-twitter, .logo-youtube{
+    width: 40px;
+    height:40px;
+  
+}
+.logo-facebook:hover,.logo-instagran:hover, 
+.logo-twitter:hover, .logo-youtube:hover,
+.footernos:hover{
+    opacity: 0.5;
+}
+
+.footerprincipal h3 {
+	font-size: 0.8em;
+    padding-right: 10px; 
+}
+
+
+
+/*=====CONFIG DOS POSICIONAENTOS DAS PAGINAS======*/
+/*================================================*/
+/*==================== HOME ======================*/
+
+#artihome{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+    height: 438px;
+    background: url(../images/home/article.jpg);
+    background-repeat: no-repeat;
+}
+.Tit-home{
+    padding: inherit;
+    margin: inherit;
+    font-size: 4em;
+    padding: 10px;
+    width: 50%;
+    color:#ff2800;
+    text-shadow: 2px 1px 1px #000000;
+ }
+
+#artihome p, #artihome footer{
+    position: relative;
+    top: 30%;
+    color: #fff;
+    text-shadow: 2px 1px 1px #000000;
+}
+.sectionhome1 {
+   float: left;
+	width: 40%;
+	height: auto;
+    margin: 0 auto 0 10%;
+} 
+
+.sectionhome2 {
+    float: left;
+	width: 40%;
+	height: auto;
+    margin: 0 auto 0 auto;
+/*    margin: 0 9% 0 1%;*/
+} 
+
+.sectionhome2 footer,.sectionhome1 footer{
+    text-align: right;
+}
+#asidhome{
+    clear: both;
+    margin-bottom: 10px;
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
+
+
+.noticias-e img, .noticias-d img{
+    width: 200px;
+    float: left;
+    padding: 1px 10px 10px 5px;
+}
+.noticias-e, .noticias-d{
+    float: left;
+    width:510px;
+    padding-left: 10px;
+}
+
+.noticias-e{
+    margin-left: 20px;
+}
+.noticias-h3 a{
+    text-decoration:none;
+    display: block;
+    font-size: 25px;
+    color: #ff2800;
+ }
+.noticias-e p,.noticias-d p{
+    font-size: 15px;
+    color: #444444;
+ }
+
+/*================================================*/
+/*================ CAMPEONTATOS ==================*/
+
+
+#articamp{
+    padding-right:1em;
+    width: 500px;
+    float: left;
+    margin-top:-16px;
+}
+
+#sectcamp1,#sectcamp2{
+    width: 490px;
+    float: left;
+    height: auto;
+    padding-left:1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-16px;
+}
+
+img.camp {
+    width: 230px;
+    height: 153px;
+    padding-left:7px;
+    padding-bottom:7px;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+
+#pcampf1, #pcampgts{
+    font-size: 12px;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid
+}
+
+#pcampf1 tr, #pcampgts tr{
+    text-shadow: 2px 1px 1px #000000;
+}
+
+
+#pcampf1 thead,#pcampf1 caption,
+#pcampgts thead,#pcampgts caption{
+    color: #ff2800;
+}
+
+#pcampf1 thead,#pcampf1 tfoot ,
+#pcampgts thead, #pcampgts tfoot{
+    text-align: center;
+}
+#pcampf1{
+    background:url("../images/galeria/F1-004.jpg");
+    width: 400px;
+   
+}
+
+#pcampgts{
+    background:url("../images/galeria/GTS-002.jpg");
+    width: 400px;
+   
+}
+
+/*
+#asidcamp img{
+    width: 200px;
+    height: 50px;
+    padding-top: 1em;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}*/
+
+.fundo {
+    background:url("../images/campeonatos/botao.png") #000000;
+    float: right;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+.fundo a { text-decoration: none;
+    color:#ffffff;
+    text-shadow: 2px 1px 1px #000000;
+    text-align: center;
+    vertical-align: middle;}
+
+.fundo:hover{
+    background-image: url("../images/campeonatos/botao.png");
+    background-size: 120% ;
+    background-position: top;
+    opacity: 0.7;
+    
+}
+footer {
+    clear: both;
+}
+/*==================================================*/
+/*==================== ESPORT ======================*/
+
+#artisport{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
+#imgsport {
+    float: right;
+    background: transparent;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sectionsport {
+    float: left;
+	width: 520px;
+	height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.sectionsport  p{
+	padding:0em 1em 0em 0.5em;
+    text-align: justify;
+}
+.sectionsport  img{
+    display: block;
+    width: 480px;
+    height: 267px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+#asidsport {
+    clear: both;
+    margin-bottom: 10px;
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
+
+/*================================================*/
+/*=============== CLASSIFICAÇÃO ==================*/
+
+.tabelagts,.tabelaF1{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.tabelaF1,.tabelagts{
+    float: left;
+}
+
+#tbf1sabado,#tbf1domingo,#tbgtsabado,#tbgtdomingo{
+    float: left;
+    width: 500px;
+    padding: 10px 30px 40px 30px;
+    border: 1px solid black;
+}
+
+.tabelaF1 td,.tabelagts td{
+    border: 1px solid black;
+}
+
+
+/*================================================*/
+/*================== GALERIA =====================*/
+.galeria{
+/*     background: linear-gradient(to bottom right, #f2f2f2 0%, #f4f1f1 100%);*/
+  /*        background:url("../images/padrao/textura3.jpg") #444444;*/
+/*        background-repeat:repeat;*/
+}
+
+#paginas ol li{display:inline;}
+#paginas a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 500;
+}
+
+#paginas {text-align: center;}
+.atual{
+	background: #ff2800;
+	color: #ffffff;
+	padding: 1px 2px;
+}
+
+.galeria figure {
+    width: 470px;
+    height: 293px;
+    padding:5px; 
+    float: left;
+    margin: 1em;
+}
+.galeria figure img{
+    width: 470px;
+    height: 293px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.galeria footer{
+    height: 40px;
+}
+
+.galeria footer p{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+/*================================================*/
+/*================= CADASTRO =====================*/
+.subtitulos{
+   font-family: "Andale Mono", AndaleMono, monospace;
+   font-weight: 600;
+   font-size: 17px;
+}
+
+select,textarea,input[type=tel],input[type=number],
+input[type=text],input[type=email],#fichacadastro p, #fichacadastro div{
+    font-family:Courier, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+}
+/* Dar um pouco de destaque nos elementos quando clicar */
+input:focus, textarea:focus {
+	background-color: #efeded;
+}
+
+#fichacadastro,.asidecadastro{
+   padding-left: 30px;
+    float: right;
+    width: 403px;
+}
+
+form .ajuste {
+    text-align: right;
+    margin: 1em 1em 1em 1em;    
+    /* topo, direita, base, esquerda */
+   font-size: 14px;
+}
+
+form .ajuste2 {
+    margin: 1em 1em 1em 1em;    
+    /* topo, direita, base, esquerda */
+    font-size: 15px;
+    font-weight: 600;
+   
+}
+button{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#fichacadastro form{
+    border:2px solid #ff2800;
+    background-color: #ffffff;
+    color: #444444;
+}
+
+fieldset{
+    border:1px solid #444444;
+}
+
+select,textarea,input[type=tel],input[type=number],
+input[type=text],input[type=email]{ 
+    font-size: 14px;
+    border:1px solid #444444;
+    /*box-shadow: 1px 1px 2px #333333;*/ 
+}
+
+/*select:hover,textarea:hover,input[type=tel]:hover,input[type=number]:hover,
+input[type=text]:hover,input[type=email]:hover{ 
+    font-size: 14px;
+    box-shadow: 1px 1px 2px #333333;
+    
+}*/
+input[type=tel]{
+    width:157px;
+}
+
+input[type=number]{  
+    width:109px;}
+
+
+input[type=text],input[type=email]{  
+    width:310px;
+}
+
+#regulamento{
+    float: left;
+    width: 570px;
+    
+}
+#regulamento ol li{
+    padding-bottom: 0.5em;
+    text-align: justify
+}
+#fichacadastro p{
+    padding: 1em;
+}
+/*================================================*/
+/*================ FALE CONOSCO ==================*/
+
+.imgbox {
+    float: right;
+    background: transparent;
+    display: block;
+    margin-left: 1em;
+    height: auto;
+    width: inherit;
+    padding: inherit;
+}
+
+
+
+footer {
+    clear: both;
+}
+
+#msgauto input[type=text],#msgauto input[type=email]{  
+    width:499px;
+    font-size: 25px;}
+#msgauto{
+    padding-left:1em;
+}
+/*================================================*/
+/*================= REFERENCIAS ==================*/
+ 
+/*CORES*/
+/* http://encycolorpedia.pt */
+/*http://webcolourdata.com/*/
+/*https://brandcolors.net*/
+/*
+branco - #ffffff;
+preto - #111111;
+vermelhor ferrari - #ff2800;
+anti-flash white- #f2f3f4;
+*/
+
+
+/*FONTES*/
+/*https://www.w3.org/Style/Examples/007/fonts.pt_BR.html*/
+
+/*Icones*/
+/*https://icomoon.io/*/
