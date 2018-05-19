@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Liga e-Sport Racer</title>
+    <link rel="icon" href="images/padrao/iconeeRacer.png" sizes="16x16" type="image/png" >
+	<link rel="stylesheet" href ="css/estilo.css" type= "text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+	   <img id="logo-f1" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017"/>
+       <img id="logo-gts" src="images/padrao/logo-GTS.png" alt="[logo] Jogo Gran Turismo Sport"/>
+	   <img id="logo" src="images/padrao/logo-eRacer.png" alt="[logo]Liga e-Sport Racer"/>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a href="galeria-1.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+		  </ul>
+	   </nav>
+    <h1 class="h1paginas">Participe de Nossas ligas</h1>
+    </header>
+    <article id="regulamento">
+    <header class="header-2">
+        <h2>Regulamento geral dos campeonatos</h2>
+    </header>
+        
+        <p class="subtitulos">Regras e codições</p>
+        <ol>
+        <li> Passim suis mundo caecoque zephyro unus sive dixere quae illic dei tuba onus sponte descenderat sic carentem deus habentia fuerat phoebe solidumque quam cura eodem fecit diu cuncta quam zonae origine carmen.</li>
+        <li>regat natura terram solum diremit primaque ille illi meis arce otia nullus caecoque animalia media grandia amphitrite aberant austro orbem sorbentur aurea coegit quod astra reparabat.</li>
+        <li>altae nam agitabilis chaos: zephyro diverso adspirate turba occiduo congestaque piscibus membra duae quinta retinebat posset.</li>
+        <li>indigestaque videre elementaquepassim nuper aera alta egens circumdare sine volucres innabilis.</li>
+        </ol>
+        <p class="subtitulos">Deveres e Punições</p>
+        <ol>
+        <li>sic carentem deus habentia fuerat phoebe solidumque quam cura eodem fecit diu cuncta quam zonae.</li>
+        <li>nullus caecoque animalia media grandia amphitrite aberant austro orbem sorbentur aurea coegit quod astra reparabat</li>
+        <li>meis arce otia nullus caecoque animalia media grandia amphitrite aberant austro orbem sorbentur aurea coegit quod astra reparabat rudis partim deerat tegit pendebat super densior parte</li>
+        </ol> 
+        <p class="subtitulos">Corridas e Transmissões</p>
+        <ol>
+        <li>congestaque piscibus membra duae quinta retinebat posset: aere caecoque derecti concordi, permisit convexi valles iussit coegit fuerat indigestaque videre elementaque passim nuper.</li>
+        <li> Passim suis mundo caecoque zephyro unus sive dixere quae illic dei tuba onus sponte descenderat sic carentem deus habentia fuerat phoebe solidumque.</li>
+        <li>regat natura terram solum diremit otia nullus caecoque animalia media grandia amphitrite aberant austro orbem sorbentur aurea coegit quod astra reparabat.</li>
+        <li>altae nam agitabilis chaos: zephyro diverso adspirate turba occiduo congestaque piscibus membra duae quinta retinebat posset.</li>
+        <li>indigestaque videre elementaquepassim nuper aera alta egens circumdare sine volucres innabilis.</li>
+        </ol>
+    <footer>
+    <p><small>O regulamento foi criado pela equipe de administração da liga e-Sport Racer, sempre visando um abiemte de diversão justo.</small></p>
+    <p class="assinatura">Liga e-Sport Racer</p>
+    </footer>
+    </article>
+    
+<!-- Documentação Formularios-->
+<!--https://www.w3.org/TR/html53/sec-forms.html#sec-forms-->
+    <article id="fichacadastro">
+    <header class="header-2">
+        <h2>Ficha de Cadastro</h2>
+    </header>
+    <form action="confirmado.html" method="get" oninput='psn2.setCustomValidity(psn2.value != psn1.value ? "Usuarios estão diferentes." : "")' target="_blank">
+        <p>Prencha a ficha de cadastro para participar de nossos campeonatos, Preencha uma ficha para cada campeonato que deseja participar e fique atendo para o dia. </p>
+        <div class="ajuste"><label>Nome:<input type="text"  minlength="5" placeholder="Ex:Lewis Hamilton..." ></label></div>
+        <div class="ajuste"><label>E-mail:<input type="email"  placeholder="Ex:lewis.hamilton@email.com"></label></div>
+        <div class="ajuste"><label>Id PSN:<input type="text" name ="psn1" placeholder="Ex:hamiltonF1"></label></div>
+        <div class="ajuste"><label>Repita:<input type="text" name ="psn2" placeholder="Ex:hamiltonF1"></label></div>
+        <div class="ajuste"><label>Idade:<input type="number" placeholder="Ex: 33"></label> <label>Tel:<input type="tel" placeholder="Ex:11 99999-9999"></label></div>
+        
+        <fieldset class="ajuste2">
+            <legend>Categoria</legend>
+            <div><label><input type="radio" name="categoria" required>Gran Turismo</label></div>
+            <div><label><input type="radio" name="categoria" required>Formula 1</label></div>
+        </fieldset>
+        <fieldset class="ajuste2">
+            <legend>Dia da Corrida</legend>
+            <div><label><input type="radio" name="dia" required>Sabado</label></div>
+            <div><label><input type="radio" name="dia" required>Domingo</label></div>
+        </fieldset>
+        <fieldset class="ajuste2">
+            <legend>Possui Volante?</legend>
+            <div><label><input type="radio" name="volante" required>Sim</label></div>
+            <div><label><input type="radio" name="volante" required>Não</label></div>
+        </fieldset>
+        
+    <!--<form action="https://www.google.com/search" method="get" target="_blank">
+    <label>Google: <input type="search" name="q"></label> <input type="submit" value="Search...">
+    </form> -->
+ 
+        <div class="ajuste2">
+          <label>Como conheceu a liga?    
+            <select name="conhecendo">
+                <option selected>Escolha...</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagran</option>
+                <option value="3">YouTube</option>
+                <option value="4">Site da liga</option>
+                <option value="5">Por Amigo</option> 
+                <option value="6">Outras Ligas</option>
+            </select>
+          </label>
+        </div>
+
+ <!--       <fieldset>
+  <legend>Destination</legend>
+  <p><label>Airport: <input type="text" name="to" list="airports"></label></p>
+  <p><label>Departure time: <input type="datetime-local" name="totime" step="3600"></label></p>
+</fieldset>
+<datalist id="airports">
+  <option value="ATL" label="Atlanta">
+  <option value="MEM" label="Memphis">
+  <option value="LHR" label="London Heathrow">
+  <option value="LAX" label="Los Angeles">
+  <option value="FRA" label="Frankfurt">
+</datalist>  onclick="alert('Parabens piloto, Cadastro Efetuado com sucesso!')"-->
+        <div class="ajuste2"><label>Observações e Comentarios: </label>
+        <textarea cols="40" rows="3" name="observacoes" maxlength="500"></textarea></div>
+            
+        <div class="ajuste2"><label><input type="checkbox" name="aceite" required>Confirmo que li e Concordo com as normas e regras da liga.</label></div>
+    
+        <div class="ajuste2"><button type="submit">Enviar</button>
+             <button type="reset">Cancelar</button></div>
+  </form>
+    
+        
+    </article>
+
+	<aside class="asidecadastro">
+        <h3 class="header-2">Fique de Olho</h3>
+        <p>Se você ja se acha bom para encarar um desafio mundial, partice e acompanhe os campeonatos oficias:</p> 
+              <a href="https://f1esports.com/" rel="external" target="_blank"><img id="logo-f1sport" src="images/cadastro/logoF1esportserie.jpg" alt="[logo]F1 Esport Series"></a>
+		
+	</aside>
+    
+    <footer class="footerprincipal">
+		
+		<nav class="footerfloat">		
+			<a href="quemsomos.html">Sobre nós</a>
+        </nav>
+		
+		<nav class="footerfloat">
+			<h3> Acompanhe nas redes Sociais</h3>
+           	<ul> 
+			<li><a href="">Facebook</a></li> 
+			<li><a href="">Instagran</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">YouTube</a></li>
+            </ul>
+		</nav>
+		<p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
+	</footer>
+</body>
+</html>
