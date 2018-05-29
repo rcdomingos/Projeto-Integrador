@@ -5,58 +5,76 @@
 	<title>Liga e-Sport Racer</title>
     <link rel="icon" href="images/padrao/iconeeRacer.png" sizes="16x16" type="image/png" >
 	<link rel="stylesheet" href ="css/estilo.css" type= "text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 </head>
+
 <body>
-	<header>
-       <img id="logo-f1" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017"/>
-       <img id="logo-gts" src="images/padrao/logo-GTS.png" alt="[logo] Jogo Gran Turismo Sport"/>
-	   <img id="logo" src="images/padrao/logo-eRacer.png" alt="[logo]Liga e-Sport Racer"/>
-	   <nav id="menu">
+	<header class="padrao">
+	   <img id="logo" src="images/padrao/logo-esracer.png" alt="[logo]Liga e-Sport Racer"/><!--logo do site-->
+        <nav id="headersociais"><!--Menu das redes sociais do header-->
+			<ul> 
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-c-cor.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-c-cor.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-c-cor.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-c-cor.svg" alt="botão ir para youtube"></a></li>
+            </ul>
+        </nav>
+        <nav id="menu"> <!--menu principal do site-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="campeonatos.html">Campeonatos</a></li>
-            <li><a href="galeria-1.html">Galeria</a></li>
+            <li><a href="esport.html">E-sport</a></li>
+            <li class="current"><a href="galeria-1.html">Galeria</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="faleconosco.html">Fale Conosco</a></li>
 		  </ul>
 	   </nav>
-        <h1 class="h1paginas">Galeria</h1>
     </header>
-	<main class="galeria">
+	
+    <section class="galeria">
+        <header>
+            <h1 class="h1paginas">Veja Nossa Galeria</h1>
+        </header>
 	
 	<!--https://www.w3.org/TR/html53/semantics-embedded-content.html#a-group-of-images-that-form-a-single-larger-picture-with-no-links-->
         
           <figure>
-            <img src="images/galeria/GTS-009.jpg">
-            <figcaption>Figura 13- Pagina em criação</figcaption>
+            <img src="images/galeria/F1-004.jpg">
+            <figcaption>Figura 13-Foto Formula 1 2017</figcaption>
           </figure>
                 
-          <figure>
-            <img src="images/galeria/F1-005.jpg">
-            <figcaption>Figura 14- Pagina em criação</figcaption>
+          <figure >
+            <img src="images/galeria/F1-010.jpg">
+            <figcaption>Figura 14-Foto Formula 1 2017</figcaption>
           </figure>
+        <footer>
                 
           <figure>
-            <img src="images/galeria/GTS-004.jpg">
-            <figcaption>Figura 15- Pagina em criação</figcaption>
+            <img src="images/galeria/GTS-010.jpg">
+            <figcaption>Figura 15- Foto Gran Turismo Sport</figcaption>
           </figure>
                  
           <figure>
-            <img src="images/galeria/F1-002.jpg">
-            <figcaption>Figura 16- Pagina em criação</figcaption>
+            <img src="images/home/noticias-classificacao.jpg">
+            <figcaption>Figura 16-Foto Gran Turismo Sport</figcaption>
           </figure>
                 
           <figure>
             <img src="images/galeria/GTS-010.jpg">
-            <figcaption>Figura 17- Pagina em criação</figcaption>
+            <figcaption>Figura 17-Foto Gran Turismo Sport</figcaption>
           </figure>
                 
           <figure >
-            <img src="images/galeria/GTS-012.jpg">
-            <figcaption>Figura 18- Pagina em criação</figcaption>
+            <img src="images/home/article.jpg">
+            <figcaption>Figura 18-Foto Gran Turismo Sport</figcaption>
           </figure>
-         
         <footer>
             <p>Tem uma foto legal? Compartilhe em nossa galeria!</p>
         </footer>
@@ -71,8 +89,7 @@
                     </video>
             </object>
         </p>-->
-                
-     </main>
+    </section>
 		<footer>
 			<!-- menu de navegação de paginas????-->
             <nav id="paginas" >
@@ -85,22 +102,26 @@
                 </ol>
   			</nav>
 		</footer>
-   	<footer class="footerprincipal">
-		
-		<nav class="footerfloat">		
+	<footer class="footerprincipal">
+		<nav id="footernos">		
 			<a href="quemsomos.html">Sobre nós</a>
         </nav>
 		
-		<nav class="footerfloat">
+		<nav id="footersociais">
 			<h3> Acompanhe nas redes Sociais</h3>
            	<ul> 
-			<li><a href="">Facebook</a></li> 
-			<li><a href="">Instagran</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">YouTube</a></li>
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-cir.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-cir.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-cir.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-cir.svg" alt="botão ir para youtube"></a></li>
+                
             </ul>
 		</nav>
-		<p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
+        <p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
 	</footer>
 
 </body>

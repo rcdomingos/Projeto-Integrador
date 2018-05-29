@@ -5,29 +5,42 @@
 	<title>Liga e-Sport Racer</title>
     <link rel="icon" href="images/padrao/iconeeRacer.png" sizes="16x16" type="image/png" >
 	<link rel="stylesheet" href ="css/estilo.css" type= "text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 </head>
+
 <body>
-	<header>
-	   <img id="logo-f1" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017"/>
-       <img id="logo-gts" src="images/padrao/logo-GTS.png" alt="[logo] Jogo Gran Turismo Sport"/>
-	   <img id="logo" src="images/padrao/logo-eRacer.png" alt="[logo]Liga e-Sport Racer"/>
-    	
-	   <nav id="menu">
+	<header class="padrao">
+	   <img id="logo" src="images/padrao/logo-esracer.png" alt="[logo]Liga e-Sport Racer"/><!--logo do site-->
+        <nav id="headersociais"><!--Menu das redes sociais do header-->
+			<ul> 
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-c-cor.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-c-cor.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-c-cor.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-c-cor.svg" alt="botão ir para youtube"></a></li>
+            </ul>
+        </nav>
+        <nav id="menu"> <!--menu principal do site-->
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li class="current"><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a href="esport.html">E-sport</a></li>
             <li><a href="galeria-1.html">Galeria</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="faleconosco.html">Fale Conosco</a></li>
 		  </ul>
 	   </nav>
-        <!--<h1 class="h1paginas">Acompanhe nossos campeonatos</h1>-->
     </header>
-
+    <main class="mainpadrao" >
 	<article id="articamp">
-        <header class="header-2">
-		  <h1>Categorias e campeonatos</h1>
+        <header>
+		  <h1 class="h1paginas">Categorias e campeonatos</h1>
         </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
@@ -58,35 +71,34 @@
         
     </article>
     
-    <section id="sectcamp1">
+    <aside id="asideprox">
          <header class="header-2">
-            <h2>Campeonatos em andamento</h2>
+            <h2>Próximas Corridas</h2>
         </header>
-        
         
         <img class="camp" src="images/campeonatos/CorridaF12017.jpg" alt="Campeonato Formula 1-Sabado" 
                             title="Dia 05-05-2018 - GP do Brasil de Formula 1"/>
                         
-        <img class="camp" src="images/campeonatos/CorridaF12017.jpg" alt="Campeonato Formula 1-Domingo" 
-                            title="Dia 06-05-2018 - GP do Brasil de Formula 1"/>
+<!--        <img class="camp" src="images/campeonatos/CorridaF12017.jpg" alt="Campeonato Formula 1-Domingo" 
+                            title="Dia 06-05-2018 - GP do Brasil de Formula 1"/> -->
         
         <img class="camp" src="images/campeonatos/CorridaGTS.jpg" alt="Campeonato Gran Turismo-Sabado"
                             title="Dia 05-05-2018 - GP em Nürburgring de Gran Turismo"/>
 
+<!--
         <img class="camp" src="images/campeonatos/CorridaGTS.jpg" alt="Campeonato Gran Turismo-Domingo"
-                            title="Dia 06-05-2018 - GP em Nürburgring de Gran Turismo"/>
-       
+                            title="Dia 06-05-2018 - GP em Nürburgring de Gran Turismo"/> -->
         
-    </section>
+    </aside>
+    </main>
      <!--<p class="more">
         <a href="classificacao.html">Veja Classificaaaação</a></p>-->
     <aside id="asidcamp">
-        <p class="fundo">
-            <a href="classificacao.html">Veja Classificação dos Campeonatos</a>
+        <p class="fundo"><a href="classificacao.html">Veja Classificação dos Campeonatos</a>
         </p>
      </aside>
     
-    <section id="sectcamp2">
+    <section id="sectcamp">
          <header class="header-2">
             <h2>Proximos campeonatos</h2>
         </header>
@@ -240,26 +252,27 @@
                  
 -->
     </section>
-    <aside>
-    
-    </aside>
     
 	<footer class="footerprincipal">
-		
-		<nav class="footerfloat">		
+		<nav id="footernos">		
 			<a href="quemsomos.html">Sobre nós</a>
         </nav>
 		
-		<nav class="footerfloat">
+		<nav id="footersociais">
 			<h3> Acompanhe nas redes Sociais</h3>
            	<ul> 
-			<li><a href="">Facebook</a></li> 
-			<li><a href="">Instagran</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">YouTube</a></li>
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-cir.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-cir.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-cir.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-cir.svg" alt="botão ir para youtube"></a></li>
+                
             </ul>
 		</nav>
-		<p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
+        <p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
 	</footer>
 
 </body>

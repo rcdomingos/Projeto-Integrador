@@ -5,29 +5,41 @@
 	<title>Liga e-Sport Racer</title>
     <link rel="icon" href="images/padrao/iconeeRacer.png" sizes="16x16" type="image/png" >
 	<link rel="stylesheet" href ="css/estilo.css" type= "text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">  
 </head>
+
 <body>
-	<header>
-	   <img id="logo-f1" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017"/>
-       <img id="logo-gts" src="images/padrao/logo-GTS.png" alt="[logo] Jogo Gran Turismo Sport"/>
-	   <img id="logo" src="images/padrao/logo-eRacer.png" alt="[logo]Liga e-Sport Racer"/>
-    	
-	   <nav id="menu">
+	<header class="padrao">
+	   <img id="logo" src="images/padrao/logo-esracer.png" alt="[logo]Liga e-Sport Racer"/><!--logo do site-->
+        <nav id="headersociais"><!--Menu das redes sociais do header-->
+			<ul> 
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-c-cor.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-c-cor.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-c-cor.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-c-cor.svg" alt="botão ir para youtube"></a></li>
+            </ul>
+        </nav>
+        <nav id="menu"> <!--menu principal do site-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a href="esport.html">E-sport</a></li>
             <li><a href="galeria-1.html">Galeria</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="faleconosco.html">Fale Conosco</a></li>
+            <li class="current"><a href="faleconosco.html">Fale Conosco</a></li>
 		  </ul>
 	   </nav>
     </header>
-    
-	<article>
-        <header class="header-2">
-			<h1>Canais de atendimento</h1>
+	<article id="arti-fale">
+        <header>
+			<h1 class="h1paginas">Canais de atendimento</h1>
 		</header>
 	        
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id suscipit eros, vitae dignissim justo. Sed sed odio ac augue porta condimentum vitae in ligula. Sed justo tortor, ullamcorper a tellus et, dictum molestie quam. Duis quis pharetra erat. Proin lacinia sagittis velit, eu suscipit enim blandit ac. Sed gravida erat quis placerat rutrum. Phasellus pellentesque convallis egestas. Etiam lorem nunc, finibus posuere odio a, fringilla finibus libero. Mauris augue lectus, dapibus sit amet libero ac, iaculis imperdiet diam. Morbi ut risus eget sapien dictum convallis. Sed pellentesque at orci et dictum. Phasellus cursus ligula auctor ultrices egestas.
@@ -39,8 +51,9 @@
         <p class="subtitulos">E-mail</p>
         <p>faleconosco@sportracer.com.br</p>
      
-        <p class="subtitulos">Mensagem Automatica</p>
+        
         <form id="msgauto">
+            <p class="subtitulos">Mensagem Automatica</p>
             <div class="ajustefl"><label>Nome:<br><input type="text"  minlength="5" ></label></div>
             <div class="ajustefl"><label>E-mail:<br><input type="email" ></label></div>
             <div class="ajustefl"><label>Mensagem:<br></label><textarea cols="60" rows="5" name="observacoes" maxlength="1000"></textarea></div>
@@ -50,24 +63,27 @@
 		    
 	</article>
 	
-
-    
 	<footer class="footerprincipal">
-		
-		<nav class="footerfloat">		
+		<nav id="footernos">		
 			<a href="quemsomos.html">Sobre nós</a>
         </nav>
 		
-		<nav class="footerfloat">
+		<nav id="footersociais">
 			<h3> Acompanhe nas redes Sociais</h3>
            	<ul> 
-			<li><a href="">Facebook</a></li> 
-			<li><a href="">Instagran</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">YouTube</a></li>
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-cir.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-cir.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-cir.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-cir.svg" alt="botão ir para youtube"></a></li>
+                
             </ul>
 		</nav>
-		<p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
+        <p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
 	</footer>
+
 </body>
 </html>

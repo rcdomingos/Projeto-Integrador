@@ -5,18 +5,32 @@
 	<title>Liga e-Sport Racer</title>
     <link rel="icon" href="images/padrao/iconeeRacer.png" sizes="16x16" type="image/png" >
 	<link rel="stylesheet" href ="css/estilo.css" type= "text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 </head>
+
 <body>
-	<header>
-	   <img id="logo-f1" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017"/>
-       <img id="logo-gts" src="images/padrao/logo-GTS.png" alt="[logo] Jogo Gran Turismo Sport"/>
-	   <img id="logo" src="images/padrao/logo-eRacer.png" alt="[logo]Liga e-Sport Racer"/>
-    	
-	   <nav id="menu">
+	<header class="padrao">
+	   <img id="logo" src="images/padrao/logo-esracer.png" alt="[logo]Liga e-Sport Racer"/><!--logo do site-->
+        <nav id="headersociais"><!--Menu das redes sociais do header-->
+			<ul> 
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-c-cor.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-c-cor.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-c-cor.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-c-cor.svg" alt="botão ir para youtube"></a></li>
+            </ul>
+        </nav>
+        <nav id="menu"> <!--menu principal do site-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="campeonatos.html">Campeonatos</a></li>
+            <li><a href="esport.html">E-sport</a></li>
             <li><a href="galeria-1.html">Galeria</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="faleconosco.html">Fale Conosco</a></li>
@@ -25,13 +39,14 @@
     </header>
 <!-- Documentação Tabelas-->
 <!-- https://www.w3.org/TR/html53/tabular-data.html#tabular-data-->
-	<main>
+	<main class="mainpadrao">
     <article> 
         <header>
             <h1 class="h1paginas">Classificação Geral dos campeonatos</h1>
         </header>
         <section class="tabelaF1">
         <header class="header-2">
+            <img class="logo-class" src="images/padrao/logo-f12017.png" alt="[logo]Jogo F1 2017" title="Logo Jogo F1 2017"/>
             <h2>Classificação F1 2017</h2>
         </header>
         <table id="tbf1sabado">
@@ -167,6 +182,7 @@
         </section>
         <section class="tabelagts">
         <header class="header-2">
+             <img class="logo-class" src="images/padrao/logoGTS-dourado.png" alt="[logo] Jogo Gran Turismo Sport" title="Logo Jogo Gran Turismo Sport"/>
             <h2> Classificação do Gran Turismo Sport</h2>
         </header>
         <table id="tbgtsabado">
@@ -269,29 +285,33 @@
         </section>
     </article>
     </main>
-    <aside>
+    <aside id="aisdeclass">
         <p>Participe tambem dos campeonatos da liga e-Sport Racer fazendo seu cadastro <a href="cadastro.html">aqui</a> ou acompanhe as transmissões ao vivo pelo YouTube em nosso canal.
         </p>
     </aside>
 
     <!-- https://www.w3.org/TR/html53/tabular-data.html#the-table-element-->
     
-    <footer class="footerprincipal">
-		
-		<nav class="footerfloat">		
-			<a href="../faleconosco/quemsomos.html">Sobre nós</a>
+	<footer class="footerprincipal">
+		<nav id="footernos">		
+			<a href="quemsomos.html">Sobre nós</a>
         </nav>
 		
-		<nav class="footerfloat">
+		<nav id="footersociais">
 			<h3> Acompanhe nas redes Sociais</h3>
            	<ul> 
-			<li><a href="">Facebook</a></li> 
-			<li><a href="">Instagran</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">YouTube</a></li>
+				<li><a href="/Facebook" rel="external" title="Facebook" target="_blank">
+                    <img class="logo-facebook" src="images/icones/facebook-cir.svg" alt="botão ir para Facebook"></a></li>
+				<li><a href="/Instagran" rel="external" title="Instagran" target="_blank">
+                    <img class="logo-instagran" src="images/icones/instagram-cir.svg" alt="botão ir para instagran"></a></li> 
+				<li><a href="/Twitter" rel="external" title="Twitter" target="_blank">
+                    <img class="logo-twitter" src="images/icones/twitter-cir.svg" alt="botão ir para Twitter"></a></li> 
+				<li><a href="/YouTube" rel="external"  title="YouTube" target="_blank">
+                    <img class="logo-youtube" src="images/icones/youtube-cir.svg" alt="botão ir para youtube"></a></li>
+                
             </ul>
 		</nav>
-		<p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
+        <p>&copy; Desenvolvido por RCDomingos - Todos os direitos reservados para mim</p>
 	</footer>
 
 </body>
