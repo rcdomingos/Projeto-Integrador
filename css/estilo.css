@@ -9,66 +9,91 @@
 /*
 html {background-color:#B22B12;}
 */
-html {background-color:#ffffff;}
 
-body{
-    background-color: #ffffff;
-/*    box-shadow: 0em 0.3em 1em #000;*/
+/*********** Cores do brackground ***********/
+/*branco*/
+html,body {
+    background-color: #ffffff;} 
+
+/*cinza claro - destaque*/
+.sectionhome1,.sectionhome2,#asideprox,#fichacadastro,#msgauto,
+.nossaequipe {
+    background-color: #ebeaea;}
+
+/*Cinza escuro*/
+.header-2,#tbf1sabado thead,#tbf1domingo thead, #tbgtsabado thead,
+#tbgtdomingo thead,#tbf1sabado caption,#tbf1domingo caption,
+#tbgtsabado caption,#tbgtdomingo caption{
+    background-color: #444444;}
+
+/*Vermelho ferrari - cor principal*/
+nav#menu,.footerprincipal,.footerprincipal p, .footerprincipal nav a,
+.atual{
+    background-color: #ff2800 ;}
+
+/*Preto*/
+.tabelagts,.tabelaF1{
+    background-color: #000;
 }
-    
+
+/* Dar um pouco de destaque nos elementos quando clicar */
+input:focus, textarea:focus {
+	background-color: #d2e3fd;
+}
+
+
+
+/************* Cores das Fontes *************/
+/*texto preto*/ 
 p{
-    color: #000000;
-}
+    color: #000000;}
 
-.h1paginas {
-     color: #ff2800;
-}
+/*texto vermelho ferrari*/ 
+.h1paginas,.Tit-home,.tit-home2,.shadow b, .noticias-h3 a,
+#pcampf1 thead,#pcampf1 caption,#pcampgts thead,#pcampgts caption,
+#tbf1sabado thead,#tbf1domingo thead, #tbgtsabado thead,
+#tbgtdomingo thead,#tbf1sabado caption,#tbf1domingo caption,
+#tbgtsabado caption,#tbgtdomingo caption{
+    color: #ff2800;}
 
-.header-2{background-color: #444444;
+/*texto branco*/
+.header-2, #menu ul li a,.footerprincipal,.footerprincipal p, .atual,
+.footerprincipal nav a,#artihome .shadow,.fundo a,#pcampf1, #pcampgts{
     color: #ffffff;}
 
-/**************Cores do menu**************************/
+/*texto cinza escuro*/
+#menu ul li a:hover, .padrao #menu .current a, nav.current a, .noticias-e p,
+.noticias-d p,#paginas a,#fichacadastro form, select,textarea,
+input[type=tel],input[type=number],input[type=text],input[type=email],
+#fichacadastro p, #fichacadastro div {
+    color: #444444;}
 
-nav#menu {
- background-color: #ff2800 ;
- /*border-top: 5px solid #2A0770;
- border-bottom: 5px solid #2A0770;*/
+
+/*************** Text Shadow ****************/
+.h1paginas,.Tit-home, #artihome .shadow,.fundo a,#pcampf1 tr, 
+#pcampgts tr,#tbf1sabado thead,#tbf1domingo thead,
+#tbgtsabado thead,#tbgtdomingo thead, #tbf1sabado caption,#tbf1domingo caption,
+#tbgtsabado caption,#tbgtdomingo caption {
+    text-shadow: 2px 1px 1px #000000;
 }
 
-#menu ul li a {
-    color:#ffffff;}/* cor da fonte */
-#menu ul li a:hover, .padrao #menu .current a {
-    color:#444444 /* cor da fonte quando clica */
-/*   text-shadow: 2px 1px 1px #000000;*/
-}
-
-/**************Cores das bordas das imagens ************/
-
-.sectionhome img , .imgbox {
-	background: transparent;
-/*	border: 2px solid #000000;*/
-}
-
-
-/**************Cores rodape da pagina********************/ 
+/************* Cores das bordas *************/
 .footerprincipal {
     border-top: 10px solid #444444;}
 
-.footerprincipal,.footerprincipal p, .footerprincipal nav a{
-    background-color: #ff2800; 
-    color: #ffffff;}
-
-/*==========PADROES DO SITE========================*/
-
-/*img#logo {
-    width:1064px; 
-    height:200px;
-    margin: 0px -20px -1px -20px;
-    padding:  0px;
+/*borda vermelho*/
+#fichacadastro form{
+    border:2px solid #ff2800;
 }
 
-*/
+/*borda cinza escuro*/
+fieldset,select,textarea,input[type=tel],input[type=number],
+input[type=text],input[type=email]{ 
+    border:1px solid #444444;
+}
 
+
+/*========== PADROES DO SITE =======================*/
 img#logo {
     width:190px; 
     height:90px;
@@ -79,23 +104,6 @@ img#logo {
     margin-bottom: -10px;
     
 }
-
-img#logo-f1{ 
-    width:100px; 
-    height:20px;
-    position:absolute;
-    right: 10px;
-    padding: 10px;
-}
-
-img#logo-gts{
-    width:100px; 
-    height:20px;
-    position:absolute;
-    right: 120px;
-    padding: 10px;
-}
-
 body{
 /*    width: 1024px;*/
     font-size: 16px;
@@ -108,20 +116,29 @@ body{
 /*fonte principal dos textos */
 p, #articamp ul li, .sectionhome p, #regulamento ol li, 
 .sctquemsomos ul li {
-    font-family:'PT Serif Caption', serif;
+/*    font-family:'PT Serif Caption', serif;*/
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding:0em 1em 0em 1em;
+  
 }
 
-/* titulos e subtituros*/
+/* fonte dos titulos e subtituros*/
 
 .header-2, .h1paginas, .footerprincipal,
-.Tit-home{
-    font-family: "Andale Mono", AndaleMono, monospace;
+.Tit-home, .tit-home2,.subtitulos,.noticias-h3{
+	font-family: 'Racing Sans One', cursive;
 }
    
-#menu ul li a {
-    font-family: "Andale Mono", AndaleMono, monospace;
+#menu ul li a,#footersociais,#footernos {
+/*
+    font-family: "Andale Mono", monospace;
+    font-family: 'Luckiest Guy', cursive;
+	font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Fredoka One', cursive;
+*/
+	font-family: 'Righteous', cursive;
+
 }
 
 .assinatura {
@@ -135,17 +152,14 @@ p, #articamp ul li, .sectionhome p, #regulamento ol li,
     margin: inherit;
 }
 
-/*h1{
-    font-family:Andale Mono,monospace;
-    text-transform:capitalize;
-    color: #ffffff;
-    background-color: #2A0770;
-    position: fixed;
-    left: -75px;
-    top:400px;
-    transform: rotate(-90deg);
-    padding: 10px;
-}*/
+select,textarea,input[type=tel],input[type=number],
+input[type=text],input[type=email],#fichacadastro p, #fichacadastro div{
+    font-family:Courier, monospace;
+}
+.header-2 h2,h3.header-2,.header-2 h1{
+    font-weight:200;}
+
+
 
 .header-2{
     font-size: 14px; 
@@ -153,21 +167,21 @@ p, #articamp ul li, .sectionhome p, #regulamento ol li,
     padding-left: 1em;
 }
 
-.h1paginas{
-   text-transform:capitalize;
+h1.h1paginas{
+    text-transform:capitalize;
     padding: inherit;
     text-align: center;
     font-style: normal;
 	font-weight: 700;
 	line-height:5px;
+    font-size: 34px;
 }
 
 /*=======CONFIG DO MENU PRINCIPAL DA PAGINA============*/
 .padrao{
-    background-color: #ff2800;
     width: 100%;
     border: inherit;
-    background: url(../images/padrao/header.jpg);
+    background: url(../images/padrao/header.jpg) #000;
     background-repeat:no-repeat;
 }
 
@@ -180,8 +194,7 @@ p, #articamp ul li, .sectionhome p, #regulamento ol li,
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 25px; 
-    font-weight: bold;
-    
+ 
 }
 /*box-shadow: inset -1px 0px 10px 0px rgba(0,0,0,0.75);
 testar como o menu princiapl*/
@@ -199,9 +212,7 @@ nav#menu{
 #headersociais{
     text-align: right;
     margin-right: 1em;
-    margin-top: -50px
-        
-    
+    margin-top: -50px;    
 }
 
 /*====CONFIG DO FOOTER PRINCIPAL DA PAGINA =======*/
@@ -220,7 +231,6 @@ nav#menu{
     text-transform: uppercase;
 	text-decoration: none;
 	font-size: 25px; 
-    font-weight: bold;
     padding-top: 10px;
     padding-left: 10px;
     float: left;
@@ -241,17 +251,18 @@ nav#menu{
 .logo-facebook,.logo-instagran, .logo-twitter, .logo-youtube{
     width: 40px;
     height:40px;
-  
-}
+ }
+
 .logo-facebook:hover,.logo-instagran:hover, 
 .logo-twitter:hover, .logo-youtube:hover,
-.footernos:hover{
+#footernos:hover{
     opacity: 0.5;
 }
 
 .footerprincipal h3 {
 	font-size: 0.8em;
     padding-right: 10px; 
+    font-weight: 100;
 }
 
 
@@ -259,42 +270,63 @@ nav#menu{
 /*=====CONFIG DOS POSICIONAENTOS DAS PAGINAS======*/
 /*================================================*/
 /*==================== HOME ======================*/
+/*
+p:active, h1:active, a:active {
+    background-color: yellow;
+}
+*/
+.mainpadrao{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
 
 #artihome{
-    width: 1080px;
+    width: 100%;
     margin: 0 auto 0 auto;
     height: 438px;
     background: url(../images/home/article.jpg);
     background-repeat: no-repeat;
+    vertical-align:text-bottom;
+   
 }
+
+#artihome p{
+     vertical-align:text-bottom;
+}
+
 .Tit-home{
     padding: inherit;
     margin: inherit;
-    font-size: 4em;
+    font-size: 4.1em;
     padding: 10px;
-    width: 50%;
-    color:#ff2800;
-    text-shadow: 2px 1px 1px #000000;
+    width: 38%;
  }
 
-#artihome p, #artihome footer{
-    position: relative;
-    top: 30%;
-    color: #fff;
-    text-shadow: 2px 1px 1px #000000;
+.tit-home2{
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 300;
 }
+
+#artihome .shadow{
+    font-size: 1.2em;
+    width: 60%
+}
+
+.sectionhome1,.sectionhome2{
+    float: left;
+	width: 49%;
+	height: auto; 
+    text-align: center;
+    
+}
+
 .sectionhome1 {
-   float: left;
-	width: 40%;
-	height: auto;
-    margin: 0 auto 0 10%;
+    margin: 0 1% 0 auto;
 } 
 
 .sectionhome2 {
-    float: left;
-	width: 40%;
-	height: auto;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 1%;
 /*    margin: 0 9% 0 1%;*/
 } 
 
@@ -303,12 +335,9 @@ nav#menu{
 }
 #asidhome{
     clear: both;
-    margin-bottom: 10px;
     width: 1080px;
     margin: 0 auto 0 auto;
 }
-
-
 
 .noticias-e img, .noticias-d img{
     width: 200px;
@@ -322,71 +351,106 @@ nav#menu{
 }
 
 .noticias-e{
-    margin-left: 20px;
+    margin-left: 15px;
 }
+
+
 .noticias-h3 a{
     text-decoration:none;
     display: block;
-    font-size: 25px;
-    color: #ff2800;
- }
+    font-size: 23px;
+    font-weight:100;
+  }
 .noticias-e p,.noticias-d p{
     font-size: 15px;
-    color: #444444;
  }
 
 /*================================================*/
 /*================ CAMPEONTATOS ==================*/
 
-
 #articamp{
-    padding-right:1em;
-    width: 500px;
+    width: 67%;
     float: left;
-    margin-top:-16px;
+    margin: -16px 3% 0 auto;
+}
+#asideprox{
+    width: 30%;
+    float: left;
+    margin: -16px auto 0 auto;
 }
 
-#sectcamp1,#sectcamp2{
-    width: 490px;
-    float: left;
-    height: auto;
-    padding-left:1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:-16px;
+img.camp{
+    width: 100%;
+    margin-bottom: 15%;
+    box-shadow: 3px 3px 2px #888888;
 }
 
 img.camp {
-    width: 230px;
-    height: 153px;
-    padding-left:7px;
-    padding-bottom:7px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    width: 95%;
+    margin: 10% 2.5% 5% 2.5%;
+}
+
+#asidcamp p {
+    width: 190px;
+    height: 80px;
+    padding-top: 10px
+}
+
+#asidcamp{
+    float: left;
+    width: 15%;
+    height: 20%;
+    margin: 0 5% 0 4%;
+    }
+
+.fundo {
+    background:url("../images/campeonatos/botao.png") #000000;
+    background-repeat: no-repeat;
+    background-size:100%;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #444444;
  }
 
+.fundo a { 
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.3em}
+
+
+.fundo:hover{
+    background-image: url("../images/campeonatos/botao.png");
+    background-size: 120% ;
+    background-position: top;
+    opacity: 0.7;}
+
+#sectcamp{
+    clear: both;
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
 #pcampf1, #pcampgts{
-    font-size: 12px;
+    float: left;
+    font-size: 14px;
     text-align: left;
-    color: #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    margin: auto;
-    margin-bottom: 10px;
-    border: 2px solid
+    padding:10px;
+    border: 2px solid;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 2%
+    
 }
 
 #pcampf1 tr, #pcampgts tr{
-    text-shadow: 2px 1px 1px #000000;
+    padding-left: 2px;
 }
 
-
-#pcampf1 thead,#pcampf1 caption,
-#pcampgts thead,#pcampgts caption{
-    color: #ff2800;
+#pcampf1 caption,#pcampgts caption{
+    font-size: 18px;
 }
+
 
 #pcampf1 thead,#pcampf1 tfoot ,
 #pcampgts thead, #pcampgts tfoot{
@@ -394,53 +458,21 @@ img.camp {
 }
 #pcampf1{
     background:url("../images/galeria/F1-004.jpg");
-    width: 400px;
-   
-}
+    width: 500px;
+    background-repeat: no-repeat;
+  }
 
 #pcampgts{
     background:url("../images/galeria/GTS-002.jpg");
-    width: 400px;
-   
+    width: 500px;
+    background-repeat: no-repeat;
 }
 
-/*
-#asidcamp img{
-    width: 200px;
-    height: 50px;
-    padding-top: 1em;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
 
-}*/
-
-.fundo {
-    background:url("../images/campeonatos/botao.png") #000000;
-    float: right;
-    width: 160px;
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
- }
-
-.fundo a { text-decoration: none;
-    color:#ffffff;
-    text-shadow: 2px 1px 1px #000000;
-    text-align: center;
-    vertical-align: middle;}
-
-.fundo:hover{
-    background-image: url("../images/campeonatos/botao.png");
-    background-size: 120% ;
-    background-position: top;
-    opacity: 0.7;
-    
-}
 footer {
     clear: both;
 }
+
 /*==================================================*/
 /*==================== ESPORT ======================*/
 
@@ -457,6 +489,11 @@ footer {
     margin-right: 10px;
 }
 
+.fig-esport{
+    float: left;
+    display: block;
+}
+
 .sectionsport {
     float: left;
 	width: 520px;
@@ -467,7 +504,6 @@ footer {
 
 .sectionsport  p{
 	padding:0em 1em 0em 0.5em;
-    text-align: justify;
 }
 .sectionsport  img{
     display: block;
@@ -476,14 +512,25 @@ footer {
     margin-left: 15px;
     text-align: center;
 }
+img.logosesport,.logosesport{ 
+    width:100px; 
+    height:20px;
+    margin: 0 auto 0 auto;
+    padding-left: 25%;
+}
 
-#asidsport {
+
+#artijogos {
     clear: both;
     margin-bottom: 10px;
     width: 1080px;
     margin: 0 auto 0 auto;
 }
 
+.fig-esport figcaption,.sectionsport footer p{
+    font-size: 0.8em;
+    text-align: center;
+}
 
 /*================================================*/
 /*=============== CLASSIFICAÇÃO ==================*/
@@ -500,48 +547,75 @@ footer {
 
 #tbf1sabado,#tbf1domingo,#tbgtsabado,#tbgtdomingo{
     float: left;
-    width: 500px;
+    width: 520px;
     padding: 10px 30px 40px 30px;
-    border: 1px solid black;
+    border: 1px solid #444444;
+    color: white;
+    vertical-align: middle;
 }
 
 .tabelaF1 td,.tabelagts td{
-    border: 1px solid black;
+    border: 2px solid #444444;
+}
+
+
+#tbf1sabado thead,#tbf1domingo thead,
+#tbgtsabado thead,#tbgtdomingo thead,
+#tbf1sabado caption,#tbf1domingo caption,
+#tbgtsabado caption,#tbgtdomingo caption{
+    font-size: 1.1em;
+}
+
+.logo-class{
+    padding-top:10px;
+    width: 100px;
+    position: relative;
+    left: 10px;
+}
+
+#aisdeclass{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+    clear: both;
 }
 
 
 /*================================================*/
 /*================== GALERIA =====================*/
 .galeria{
-/*     background: linear-gradient(to bottom right, #f2f2f2 0%, #f4f1f1 100%);*/
-  /*        background:url("../images/padrao/textura3.jpg") #444444;*/
-/*        background-repeat:repeat;*/
+    width: 1080px;
+    margin: 0 auto 0 auto;
+    /*     background: linear-gradient(to bottom right, #f2f2f2 0%, #f4f1f1 100%);*/
+    /*        background:url("../images/padrao/textura3.jpg") #444444;*/
+    /*        background-repeat:repeat;*/
 }
 
 #paginas ol li{display:inline;}
+
 #paginas a{
     text-decoration: none;
-    color: #444444;
     font-weight: 500;
 }
 
 #paginas {text-align: center;}
+
 .atual{
-	background: #ff2800;
-	color: #ffffff;
 	padding: 1px 2px;
 }
 
 .galeria figure {
-    width: 470px;
-    height: 293px;
-    padding:5px; 
+    padding: 0;
+    width: 530px;
+    height:330px;
+   
     float: left;
-    margin: 1em;
+    margin: 0.2em;
+    margin-bottom: 2em;
 }
 .galeria figure img{
-    width: 470px;
-    height: 293px;
+    padding: 0;
+    width: 530px;
+    height: 330px;
     box-shadow: 2px 2px 5px #888888;
 }
 
@@ -558,34 +632,30 @@ footer {
 /*================================================*/
 /*================= CADASTRO =====================*/
 .subtitulos{
-   font-family: "Andale Mono", AndaleMono, monospace;
-   font-weight: 600;
-   font-size: 17px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: inherit;
 }
 
 select,textarea,input[type=tel],input[type=number],
 input[type=text],input[type=email],#fichacadastro p, #fichacadastro div{
-    font-family:Courier, monospace;
     font-size: 14px;
     font-weight: 600;
-    color: #444444;
-}
-/* Dar um pouco de destaque nos elementos quando clicar */
-input:focus, textarea:focus {
-	background-color: #efeded;
 }
 
 #fichacadastro,.asidecadastro{
-   padding-left: 30px;
-    float: right;
-    width: 403px;
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+    width: 30%;
+    
 }
 
 form .ajuste {
     text-align: right;
     margin: 1em 1em 1em 1em;    
     /* topo, direita, base, esquerda */
-   font-size: 14px;
+    font-size: 14px;
 }
 
 form .ajuste2 {
@@ -600,20 +670,9 @@ button{
     margin-bottom: 10px;
 }
 
-#fichacadastro form{
-    border:2px solid #ff2800;
-    background-color: #ffffff;
-    color: #444444;
-}
-
-fieldset{
-    border:1px solid #444444;
-}
-
 select,textarea,input[type=tel],input[type=number],
 input[type=text],input[type=email]{ 
     font-size: 14px;
-    border:1px solid #444444;
     /*box-shadow: 1px 1px 2px #333333;*/ 
 }
 
@@ -637,7 +696,7 @@ input[type=text],input[type=email]{
 
 #regulamento{
     float: left;
-    width: 570px;
+    width: 60%;
     
 }
 #regulamento ol li{
@@ -647,33 +706,78 @@ input[type=text],input[type=email]{
 #fichacadastro p{
     padding: 1em;
 }
+
+.cadastro{
+    text-align: center;
+    font-size: 1.5em;
+}
 /*================================================*/
 /*================ FALE CONOSCO ==================*/
-
-.imgbox {
-    float: right;
-    background: transparent;
-    display: block;
-    margin-left: 1em;
-    height: auto;
-    width: inherit;
-    padding: inherit;
+#arti-fale,.nossaequipe{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 0.5%;
 }
 
-
+.imgbox {
+    width: 400px;
+    height: auto;
+    float: right;
+    display: block;
+    margin-left: 1em;
+    padding: inherit;
+}
 
 footer {
     clear: both;
 }
 
-#msgauto input[type=text],#msgauto input[type=email]{  
-    width:499px;
+#msgauto input[type=text],#msgauto input[type=email],#msgauto textarea{  
+    width:500px;
     font-size: 25px;}
+
 #msgauto{
-    padding-left:1em;
+      padding-left:1em;
+}
+#msgauto p{
+    font-size: 22px;
+    padding-left:0;
+    padding-top:10px;
+    margin-top: 5% ;
 }
 /*================================================*/
 /*================= REFERENCIAS ==================*/
+
+/* unvisited link */
+/*
+a:link {
+    color: green;
+}
+*/
+
+/* visited link */
+/*
+a:visited {
+    color: green;
+}
+*/
+
+/* mouse over link */
+/*
+a:hover {
+    color: red;
+}
+*/
+
+/* selected link */
+
+/*
+a:active {
+    color: yellow;
+} 
+*/
+
+
  
 /*CORES*/
 /* http://encycolorpedia.pt */
@@ -692,3 +796,5 @@ anti-flash white- #f2f3f4;
 
 /*Icones*/
 /*https://icomoon.io/*/
+
+/*https://medium.com/@eduagni/html5-entendendo-a-estrutura-e-a-sem%C3%A2ntica-db5f17808c7*/
